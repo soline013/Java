@@ -12,16 +12,16 @@
 3. JAVA의 키워드는 사용할 수 없다.
 
 ## 자료형.
-
-1. int : 정수.
-2. String : 문자열.
-3. long
-4. double
-5. boolean
-6. char
-7. StringBuffer
-8. List
-9. Map
+1. `int` : 정수.
+2. `long` : 정수.
+3. `float` : 실수.
+4. `double` : 실수.
+5. `String` : 문자열.
+6. `StringBuffer`
+7. `boolean`
+8. `char`
+9. `List`
+10. `Map`
 
 ## 사용자 정의 자료형.
 
@@ -45,3 +45,9 @@ public class FileName {
 여기서 `main` Method는 C와 의미가 같고, `String[] args`를 통해 프로그램 실행 단계에서 Parameter를 입력받을 수 있다.
 
 Class는 파일 이름과 같게 설정해준다.
+
+## JAVA의 작동 원리.
+
+![https://cphinf.pstatic.net/mooc/20200626_288/1593156437130AvxWd_PNG/mceclip0.png](https://cphinf.pstatic.net/mooc/20200626_288/1593156437130AvxWd_PNG/mceclip0.png)
+
+.class 확장자로 JVM에 올리면 모든 환경에서 작동할 수 있다.
