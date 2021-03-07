@@ -1,4 +1,4 @@
-# JAVA Basic.
+# Basic JAVA.
 ## 변수.
 
 `int a;`
@@ -18,8 +18,8 @@
 4. `double` : 실수.
 5. `String` : 문자열.
 6. `StringBuffer`
-7. `boolean`
-8. `char`
+7. `boolean` : 참, 거짓.
+8. `char` : 문자.
 9. `List`
 10. `Map`
 
