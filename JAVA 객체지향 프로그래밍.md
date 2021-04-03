@@ -42,3 +42,9 @@ public class Animal {
 ```
 
 Class에 선언된 변수를 객체 변수, 인스턴스 변수, 속성이라고 한다.
+
+## 생성자, 소멸자.
+
+## 메시지.
+
+## public, private, static.
