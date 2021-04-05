@@ -43,7 +43,33 @@ public class Animal {
 
 Class에 선언된 변수를 객체 변수, 인스턴스 변수, 속성이라고 한다.
 
-## 생성자, 소멸자.
+## 생성자(Constructor).
+```java
+public ClassName(int i, int j) {
+	this.i = 0;
+	this.j = 0;
+}
+```
+
+1. 주 메모리에 인스턴스가 위치하도록 공간을 할당하고 인스턴스를 생성한다.
+2. 생성된 인스턴스의 상태를 초기화한다.
+3. 생성자의 이름은 클래스의 이름과 같다.
+4. 생성자는 인스턴스 생성 시 한 번만 실행된다.
+
+### 번외. C++에서의 생성자.
+```cpp
+public:
+	ClassName();
+```
+
+```cpp
+ClassName() {
+	i = 0;
+	j = 0;
+}
+```
+
+## 소멸자(Destructor).
 
 ## 메시지.
 
