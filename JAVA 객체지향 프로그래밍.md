@@ -71,6 +71,17 @@ ClassName() {
 
 ## 소멸자(Destructor).
 
-## 메시지.
+## 메시지(Message).
+```java
+int Age() {
+	return Age;
+}
+```
+
+```java
+Age();
+```
+
+함수나 메서드 정의가 아닌, 함수나 메서드를 부르는 것을 Message라고 한다.
 
 ## public, private, static.
