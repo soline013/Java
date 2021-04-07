@@ -85,3 +85,8 @@ Age();
 함수나 메서드 정의가 아닌, 함수나 메서드를 부르는 것을 Message라고 한다.
 
 ## public, private, static.
+`public`: 함수나 변수를 Class 밖에서 자유롭게 부를 수 있다.
+
+`private`: 함수나 변수를 Class 밖에서 자유롭게 부를 수 없다.
+
+`static`: static 변수는 모든 객체에서 같은 값을 갖는다.
