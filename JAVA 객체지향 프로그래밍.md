@@ -84,12 +84,12 @@ Age();
 
 함수나 메서드 정의가 아닌, 함수나 메서드를 부르는 것을 Message라고 한다.
 
-## `public`, `private`.
+## public, private.
 `public`: 함수나 변수를 Class 밖에서 자유롭게 부를 수 있다.
 
 `private`: 함수나 변수를 Class 밖에서 자유롭게 부를 수 없다.
 
-## `static`.
+## static.
 
 ```java
 public class FileName {
@@ -105,12 +105,12 @@ public class FileName {
 
 4. Class 내의 Class에서도 상위 클래스의 Static 변수를 사용할 수 있다.
 
-## `finalize()`, `gc()`.
+## finalize(), gc().
 `new`가 객체를 생성하는 키워드였다면,
 
 `finalize()`, `gc()`는 객체를 지우는 C++에서의 `Delete` 역할을 한다.
 
-## `finalize()` Method.
+## finalize() Method.
 
 보통 Garbage Collector가 호출될 때 실행된다.
 
@@ -125,7 +125,7 @@ gc는 돌아가는데 시간이 다소 소요되므로, 밑에 있는 코드가 
 	- To release resources used by objects before they're removed from the memory.
 	- A finalizer can work as the primary mechanism for clean-up operatons, or as a safety net when other methods fail.
 
-## `gc()` Method.
+## gc() Method.
 
 임의로 Garbage Collector를 부를 때 사용하므로 잘 사용하지 않는다.
 
