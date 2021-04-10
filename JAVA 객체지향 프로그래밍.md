@@ -69,72 +69,81 @@ ClassName() {
 }
 ```
 
-## 소멸자(Destructor).
+## **소멸자(Destructor).**
 
-## 메시지(Message).
+JAVA에서는 분명한 소멸자가 없는 대신, Garbage Collection을 이용해 자원을 반환하고, JVM이 메모리에서 자동으로 삭제한다.
+
+대신 `finalize()`, `gc()` 등을 사용할 수 있다.
+
+## **메시지(Message).**
+
 ```java
-int Age() {
-	return Age;
+class Person {
+	int Age() {
+		return Age;	
+	}
 }
 ```
 
 ```java
-Age();
+Person p1 = new Person;
+p1.Age();
 ```
 
-함수나 메서드 정의가 아닌, 함수나 메서드를 부르는 것을 Message라고 한다.
+[수신 객체 이름].[메소드 이름] ([매개변수 목록])으로 사용한다.
 
-## public, private.
-`public`: 함수나 변수를 Class 밖에서 자유롭게 부를 수 있다.
+메소드 정의가 아닌, 메소드를 부르는 것을 Message라고 한다.
 
-`private`: 함수나 변수를 Class 밖에서 자유롭게 부를 수 없다.
+## **public, private.**
+
+`public` : 함수나 변수를 Class 밖에서 자유롭게 부를 수 있다.
+
+`private` : 함수나 변수를 Class 밖에서 자유롭게 부를 수 없다.
 
 ## static.
 
 ```java
 public class FileName {
-	static String str = "Hello, world!";
+	static Srting str = "Hello, world!";
 }
 ```
 
 1. Static 변수는 모든 객체에서 같은 값을 갖는다.
-
 2. Static은 객체를 만들지 않아도 Class 자체에 메모리 장소가 저장되어 있다.
-
 3. Method에 Static이 붙으면 Static 변수만 사용한다.
-
 4. Class 내의 Class에서도 상위 클래스의 Static 변수를 사용할 수 있다.
 
 ## finalize(), gc().
+
 `new`가 객체를 생성하는 키워드였다면,
 
-`finalize()`, `gc()`는 객체를 지우는 C++에서의 `Delete` 역할을 한다.
+`finalize()`, `gc()`는 소멸자, C++에서의 `Delete` 역할을 한다.
 
 ## finalize() Method.
 
 보통 Garbage Collector가 호출될 때 실행된다.
 
-결국 `gc()`가 호출되면 `finalize()`도 같이 실행된다.
+결국 `gc()`가 호출되면 `finalize()`도 같이 실행된다.
 
-gc는 돌아가는데 시간이 다소 소요되므로, 밑에 있는 코드가 먼저 실행되고 `finalize()`가 실행될 수 있다.
+Garbage Collection은 우선순위가 낮은 작업으로 시간이 다소 소요되므로, 밑에 있는 코드가 먼저 실행되고 `finalize()`가 실행될 수 있다.
 
 1. The finalize() method is called the 'finalizer'.
 2. Finalizer is invoked when JVM performs the garbage collection.
 3. Finalizer may perform any operations.
 4. Main Purpose of a Finalizer.
-	- To release resources used by objects before they're removed from the memory.
-	- A finalizer can work as the primary mechanism for clean-up operatons, or as a safety net when other methods fail.
+    - To release resources used by objects before they're removed from the memory.
+    - A finalizer can work as the primary mechanism for clean-up operatons, or as a safety net when other methods fail.
 
 ## gc() Method.
 
-임의로 Garbage Collector를 부를 때 사용하므로 잘 사용하지 않는다.
+임의로 Garbage Collection를 부를 때 사용하므로 잘 사용하지 않는다.
+
+Garbage Collection은 우선순위가 낮은 작업이므로, Garbage Collection을 명확하게 하려면 다른 자원은 `null` 처리하는 것이 좋다.
 
 1. Garbage Collection in Java.
-	- Eventually, some objects will no longer be needed.
-	- The garbage collector finds these unused objects and deletes them to free up memory.
-
+    - Eventually, some objects will no longer be needed.
+    - The garbage collector finds these unused objects and deletes them to free up memory.
 2. Java garbage collection is an automatic process.
-	- No need to explicitly mark objects to be deleted.
-
+    - No need to explicitly mark objects to be deleted.
 3. gc() method.
-	- It runs the garbage collector.
+    - It runs the garbage collector.
