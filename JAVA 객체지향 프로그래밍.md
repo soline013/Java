@@ -69,13 +69,13 @@ ClassName() {
 }
 ```
 
-## **소멸자(Destructor).**
+## 소멸자(Destructor).
 
 JAVA에서는 분명한 소멸자가 없는 대신, Garbage Collection을 이용해 자원을 반환하고, JVM이 메모리에서 자동으로 삭제한다.
 
 대신 `finalize()`, `gc()` 등을 사용할 수 있다.
 
-## **메시지(Message).**
+## 메시지(Message).
 
 ```java
 class Person {
@@ -94,7 +94,19 @@ p1.Age();
 
 메소드 정의가 아닌, 메소드를 부르는 것을 Message라고 한다.
 
-## **public, private.**
+## 캡슐화(Encapsulation).
+
+관련되 속성과 오퍼레이션들을 하나의 객체 안에 그룹화하는 원칙이다.
+
+캡슐화 원칙만으로는 속성이나 오퍼레이션이 외부로 노출되므로, 정보 은닉이 필요하다.
+
+## 정보 은닉(Information Hiding).
+
+객체가 가지고 있는 속성, 오퍼레이션 일부를 감추어서, 객체의 외부에서 접근하지 못하게 하는 원칙이다.
+
+객체는 블랙박스 형태로 정의된다.
+
+## public, private.
 
 `public` : 함수나 변수를 Class 밖에서 자유롭게 부를 수 있다.
 
