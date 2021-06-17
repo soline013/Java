@@ -1,7 +1,11 @@
-# JAVA 객체지향 프로그래밍.
-해당 페이지는 JAVA 객체지향을 중심으로 다룬다.
+# JAVA Class & Object.
+해당 페이지는 JAVA 객체지향을 중심으로 다룹니다.
 
-C++의 객체지향도 일부 나오나, 해당 페이지의 내용이 모든 객체지향에 해당하지는 않는다.
+C++의 객체지향도 일부 나오나, 해당 페이지의 내용이 모든 객체지향에 해당하지는 않습니다.
+
+Class와 Object에 대한 기본적인 내용을 정리합니다.
+
+Inheritance, Polymorphism, Abstract Class, Interface, Generic Class는 다른 문서에서 정리합니다.
 
 ## Class.
 
